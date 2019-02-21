@@ -15,7 +15,7 @@
 # limitations under the License.
 
 require 'iqvoc'
-require 'iqvoc/version'
+require 'iqvoc/phdr/version'
 
 Iqvoc.host_namespace = Iqvoc::Phdr
 
