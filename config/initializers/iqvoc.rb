@@ -17,6 +17,8 @@
 require 'iqvoc'
 require 'iqvoc/version'
 
+Iqvoc.host_namespace = Iqvoc::Phdr
+
 ActiveRecord::Base.send :include, DeepCloning
 
 ##### INSTANCE SETTINGS #####

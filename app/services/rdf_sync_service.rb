@@ -16,7 +16,17 @@ class RDFSyncService
       end
       options[:repository] = repo
       return IqTriplestorage::SesameAdaptor.new(host_url, options)
-    end
+    end,
+    'fuseki' => lambda do |host_url, options|
+      require 'iq_triplestorage_local/fuseki_adaptor'
+      host_url, _, repo = host_url.rpartition('/repositories/')
+      if host_url.blank? 
+       raise ArgumentError, 'missing repository in Fuseki URL'
+      end
+      options[:repository] = repo
+      return IqTriplestorage::FusekiAdaptor.new(host_url, options)
+    end,
+
   }
 
   def initialize(base_url, target_url, options)
