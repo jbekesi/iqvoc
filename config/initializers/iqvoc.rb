@@ -19,10 +19,23 @@ require 'iqvoc/phdr/version'
 
 Iqvoc.host_namespace = Iqvoc::Phdr
 
+Iqvoc.config do |config|
+  config.register_settings({
+    "title" => "Cedar",
+    "site_url" => "",
+    "minter.base_url" => "",
+    "minter.api_endpoint" => "",
+    "minter.api_key" => "",
+    "minter.prefix" => "",
+    "minter.erc_who" => ""
+  })
+end
+
 ActiveRecord::Base.send :include, DeepCloning
 
 ##### INSTANCE SETTINGS #####
 
+=begin
 # initialize non-dynamic settings below
 # see lib/iqvoc.rb for the list of available setting
 
@@ -39,3 +52,4 @@ Iqvoc.default_rdf_namespace_helper_modules << IqvocModuleHelper
 
 Iqvoc.export_path = Rails.root.join('public/export')
 Iqvoc.upload_path = Rails.root.join('public/uploads')
+=end
