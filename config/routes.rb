@@ -99,6 +99,6 @@ Rails.application.routes.draw do
   get 'hierarchy/:root' => 'hierarchy#show'
 
   get ':id' => 'rdf#show', as: 'rdf'
-
+  
   root to: 'frontpage#index', format: nil
 end

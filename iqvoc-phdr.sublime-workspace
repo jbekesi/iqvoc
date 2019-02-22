@@ -1,0 +1,523 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"None",
+				"none"
+			],
+			[
+				"tfm2",
+				"update_tfm_2"
+			],
+			[
+				"changed_objec",
+				"changed_objects_ids\tstatement"
+			],
+			[
+				"changed",
+				"changed_objects"
+			],
+			[
+				"object",
+				"objecttype\tstatement"
+			],
+			[
+				"__eas",
+				"__easydb_goid"
+			],
+			[
+				"com",
+				"compare_json\tfunction"
+			],
+			[
+				"g",
+				"groups\tfunction"
+			],
+			[
+				"obje",
+				"objekt_set"
+			],
+			[
+				"sto",
+				"store_true"
+			],
+			[
+				"batc",
+				"batch_size\tparam"
+			],
+			[
+				"sql",
+				"sql_update_ktfm\tstatement"
+			],
+			[
+				"a_",
+				"a_e5_id"
+			],
+			[
+				"update",
+				"update_tfm_object\tfunction"
+			],
+			[
+				"obj",
+				"object_goid"
+			],
+			[
+				"to",
+				"to_json\tfunction"
+			],
+			[
+				"collect_",
+				"collection_id"
+			],
+			[
+				"collection",
+				"collection_importer"
+			],
+			[
+				"get_c",
+				"get_collection_by_id\tfunction"
+			],
+			[
+				"qu",
+				"quicklink"
+			],
+			[
+				"coll",
+				"coll_id"
+			],
+			[
+				"M",
+				"MAGENTA\tstatement"
+			],
+			[
+				"sour",
+				"source_id\tstatement"
+			],
+			[
+				"test",
+				"test_add_kue\tstatement"
+			],
+			[
+				"tf",
+				"tfm_masked"
+			],
+			[
+				"easydb",
+				"__easydb_goid"
+			],
+			[
+				"admin",
+				"ez5_admin_id"
+			],
+			[
+				"dobule",
+				"double_mail\tstatement"
+			],
+			[
+				"v",
+				"video"
+			],
+			[
+				"m",
+				"mkdir"
+			],
+			[
+				"em",
+				"emailfix"
+			],
+			[
+				"At",
+				"AttributeError\tclass"
+			],
+			[
+				"e",
+				"execute\tfunction"
+			],
+			[
+				"dou",
+				"double_user\tstatement"
+			],
+			[
+				"ch",
+				"check_user_login_unique"
+			],
+			[
+				"check",
+				"check_emails"
+			],
+			[
+				"user_",
+				"user_cnt\tstatement"
+			],
+			[
+				"stippled",
+				"stippled_underline"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 5707,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Ana",
+				"Anaconda: McCabe complexity check"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 420.0
+	},
+	"console":
+	{
+		"height": 143.0,
+		"history":
+		[
+			"git pull",
+			"import socket; socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((\"localhost\", 61236))",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"quit;",
+			"exit",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/janos/Code/unidam5/digest_ingest/data/personen-data.csv",
+		"/Users/janos/Code/unidam5/digest_ingest/data/historisches-data.csv",
+		"/Users/janos/Code/unidam5/digest_ingest/data/evanthr-final/manifest.json",
+		"/Users/janos/Code/unidam5/digest_ingest/data/evanthr-final/virdam_evanthr_export.json",
+		"/Users/janos/Code/unidam5/digest_ingest/data/luschan-test-edited.csv",
+		"/Users/janos/Code/unidam5/digest_ingest/data/evanthr-final/evanth-test.json",
+		"/Users/janos/Code/unidam5/digest_ingest/data/evanthr-final/zwei_pdf_objekte_luschan.csv",
+		"/Users/janos/Code/unidam5/digest_ingest/data/luschan_final_2018-10.csv",
+		"/Users/janos/Code/unidam5/digest_ingest/data/luschan_final_2018-10_edited.csv",
+		"/Users/janos/Code/unidam5/digest_ingest/data/luschan_final_2018-10_edited-2.1-500.csv",
+		"/Users/janos/Code/unidam5/digest_ingest/transform.py",
+		"/Users/janos/Code/unidam5/digest_ingest/data/luschan_final_2018-10_edited-2",
+		"/Users/janos/Code/unidam5/digest_ingest/data/luschan-test_11b_ff.csv",
+		"/Users/janos/Code/unidam5/digest_ingest/data/luschan-test_11a.csv",
+		"/Users/janos/Code/unidam5/digest_ingest/data/luschan-test.csv",
+		"/Users/janos/ucloud/Documents/python2-3-stub.py",
+		"/Users/janos/Code/unidam5/uha/UNIDAM_1_10000.csv",
+		"/Users/janos/Code/unidam4/migr-tools/utils.py",
+		"/Users/janos/Code/unidam4/migr-tools/rework.py",
+		"/Users/janos/Code/unidam4/migr-tools/README.md",
+		"/Users/janos/Code/unidam4/migr-tools/publish_doc.sh",
+		"/Users/janos/Code/unidam4/migr-tools/doc/source/shared_vars.rst",
+		"/Users/janos/Code/unidam4/migr-tools/doc/source/utils.rst",
+		"/Users/janos/Code/unidam4/migr-tools/doc/source/index.rst",
+		"/Users/janos/Code/unidam4/migr-tools/doc/source/fabfile.rst",
+		"/Users/janos/Code/unidam4/migr-tools/doc/source/welcome_mailer.rst",
+		"/Users/janos/Code/unidam4/migr-tools/.gitignore",
+		"/Users/janos/Code/unidam4/migr-tools/doc/source/conf.py",
+		"/Users/janos/Code/unidam4/migr-tools/collection_importer.py",
+		"/Users/janos/Code/unidam4/migr-tools/welcome_mailer.py",
+		"/Users/janos/Code/unidam4/migr-tools/workdata/tfm/3.json",
+		"/Users/janos/Code/unidam4/dest-f/migration-final.log",
+		"/Users/janos/Code/unidam4/migr-tools/rework.log",
+		"/Users/janos/Code/unidam4/migr-tools/utils.log",
+		"/Users/janos/Code/unidam4/migr-tools/easydb/server/api.py",
+		"/Users/janos/Code/unidam4/migr-tools/easydb/migration/load/loader.py",
+		"/Users/janos/Code/unidam4/migr-tools/workdata/objekte_export.csv",
+		"/Users/janos/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/Users/janos/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/Users/janos/Code/unidam4/migr-tools/data/261752_n.json",
+		"/Users/janos/Code/unidam4/migr-tools/easydb/server/collection_object.py",
+		"/Users/janos/Code/unidam4/migr-tools/data/261752_mit_bild.json",
+		"/Users/janos/Code/unidam4/migr-tools/upload_final",
+		"/Users/janos/Code/unidam5/easydb5-cfg/uni-wien5/email/welcome_new_user-03.mbox",
+		"/Users/janos/Code/unidam4/migr-tools/data/umstellung_login_msg.md",
+		"/Users/janos/Library/Application Support/Sublime Text 3/Packages/User/python3.sublime-build",
+		"/Users/janos/Code/unidam4/migr-tools/workdata/tfm/7.json",
+		"/Users/janos/Code/unidam4/migr-tools/workdata/tfm/0.json",
+		"/Users/janos/Code/unidam4/migr-tools/workdata/tfm/1.json",
+		"/Users/janos/Code/unidam4/migr-tools/workdata/tfm/2.json",
+		"/Users/janos/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/janos/Code/unidam4/migr-tools/data/261535.json",
+		"/Users/janos/Code/unidam4/migr-tools/data/137819_n.json",
+		"/Users/janos/Code/unidam4/migr-tools/data/137819.json",
+		"/Users/janos/Code/unidam4/migr-tools/easydb/server/user.py",
+		"/Users/janos/Code/unidam4/migr-tools/easydb/server/object.py",
+		"/Users/janos/Code/unidam4/migr-tools/transf_final",
+		"/Users/janos/Code/unidam4/migr-tools/transf_test",
+		"/Users/janos/Code/unidam5/easydb5-cfg/uni-wien5/email/welcome_new_user-02.mbox",
+		"/Users/janos/Code/unidam5/easydb5-cfg/uni-wien5/config/easydb5-master.yml",
+		"/Users/janos/Code/unidam4/migr-tools/test_api.log",
+		"/Users/janos/Code/unidam4/migr-tools/test_api.py",
+		"/Users/janos/Code/unidam4/migr-tools/easydb/migration/extract.py",
+		"/Users/janos/Code/unidam4/migr-tools/transform_2dest_final",
+		"/Users/janos/Code/unidam4/migr-tools/transform_2dest",
+		"/Users/janos/Code/unidam4/credentials",
+		"/Users/janos/Code/unidam4/migr-tools/upload",
+		"/Users/janos/Code/unidam4/migr-tools/transform",
+		"/Users/janos/Code/unidam4/migr-tools/upload_test",
+		"/Users/janos/Code/unidam5/easydb5-cfg/uni-wien5/email/confirm_email-01.mbox",
+		"/Users/janos/Code/unidam5/easydb5-cfg/uni-wien5/email/forgot_password-01.mbox",
+		"/Users/janos/Code/unidam5/easydb5-cfg/uni-wien5/email/welcome_new_user-01.mbox",
+		"/Users/janos/Code/unidam4/migr-tools/data/template_unidam.mbox",
+		"/Users/janos/Code/unidam5/easydb5-cfg/uni-wien5/email/transition_resolve-01.mbox",
+		"/Users/janos/Code/unidam5/easydb5-cfg/uni-wien5/email/transport-01.mbox",
+		"/Users/janos/Code/unidam5/easydb5-cfg/uni-wien5/email/transition_reject-01.mbox",
+		"/Users/janos/Code/unidam5/easydb5-cfg/uni-wien5/email/share_collection-01.mbox",
+		"/Users/janos/Code/unidam5/easydb5-cfg/uni-wien5/email/updated_self_service-01.mbox",
+		"/Users/janos/Code/unidam5/easydb5-cfg/uni-wien5/email/login-disabled-01.mbox",
+		"/Users/janos/Code/unidam5/easydb5-cfg/uni-wien5/email/login_disabled.mbox",
+		"/Users/janos/Code/unidam4/migr-tools/add_tables_linked.py",
+		"/Users/janos/Code/unidam4/migr-tools/shared_vars.py",
+		"/Users/janos/Code/unidam4/migr-tools/doku/announcement_login.md",
+		"/Users/janos/Code/unidam4/migr-tools/doku/login_impressum.md",
+		"/Users/janos/Code/unidam5/easydb5-cfg/uni-wien5/email/confirm_email.mbox",
+		"/Users/janos/Code/unidam5/easydb5-cfg/base/base.yml",
+		"/Users/janos/Code/unidam4/migr-tools/trans_test.py",
+		"/Users/janos/Code/unidam4/migr-tools/add_tables_allgem.py",
+		"/Users/janos/Code/unidam5/easydb5-cfg/fabfile.py",
+		"/Users/janos/Code/unidam5/easydb5-cfg/es/startup.sh",
+		"/Users/janos/Code/unidam5/easydb5-cfg/base/es_settings.json",
+		"/Users/janos/Code/unidam5/easydb5-cfg/es/get_yaml_config",
+		"/Users/janos/Code/unidam5/easydb5-cfg/es/elasticsearch-extracted.yml",
+		"/Users/janos/Code/unidam4/migr-tools/add_tables_bilder_01.py",
+		"/Users/janos/Code/unidam4/migr-tools/add_tables_vid.py",
+		"/Users/janos/Code/unidam4/migr-tools/add_tables_coll.py",
+		"/Users/janos/Code/unidam4/migr-tools/upload.py",
+		"/Users/janos/Code/unidam4/migr-tools/fabfile.py",
+		"/Users/janos/Code/unidam4/migr-tools-tst/easydb/migration/transform/job.py",
+		"/Users/janos/Code/unidam4/migr-tools-tst/easydb/migration/load/loader.py",
+		"/Users/janos/Code/unidam4/migr-tools-tst/README.md",
+		"/Users/janos/Code/unidam4/migr-tools-tst/easydb/server/collection.py",
+		"/Users/janos/Code/unidam4/migr-tools-tst/upload.py",
+		"/Users/janos/Code/unidam4/migr-tools-tst/transformation.py",
+		"/Users/janos/Code/unidam4/dest/migration.log",
+		"/Users/janos/Code/unidam4/migr-tools/easydb/tool/json.py",
+		"/Users/janos/Code/unidam4/remote-dest-copy/migration.log",
+		"/Users/janos/Code/unidam4/dest-csv/select_from_easydb_bilder_where_source_unique_id_in_440217_87434_201801241202.csv",
+		"/Users/janos/Code/unidam4/migr-tools/migr-tools.sublime-project"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"_version",
+			"pdf",
+			"\\n",
+			"16077",
+			","
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			".tif\\n",
+			"\\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5707,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 156.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 114.0
+	},
+	"output.golang_build":
+	{
+		"height": 102.0
+	},
+	"pinned_build_system": "Packages/User/python3.sublime-build",
+	"project": "iqvoc-phdr.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Code/unidam4/migr-tools/migr-tools.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
