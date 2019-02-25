@@ -24,7 +24,7 @@ class Origin
 
   def initialize(value = nil)
     self.initial_value = value
-    randval = SecureRandom(33285996544) + 1073741824
+    randval = SecureRandom.random_number(33285996544) + 1073741824
     self.value = Base32::Crockford.encode(randval, :split=>4, :length=>8)
     # was before:
     # self.value = "_#{SecureRandom.hex(4)}"
