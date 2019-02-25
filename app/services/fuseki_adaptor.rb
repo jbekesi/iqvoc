@@ -10,7 +10,8 @@ class IqTriplestorage::FusekiAdaptor < IqTriplestorage::BaseAdaptor
     # validate to avoid nasty errors
     raise(ArgumentError, "username must not be nil") if @username.nil?
     @repo = options[:repository]
-    raise(ArgumentError, "repository must not be nil") if @repo.nil?    
+    raise(ArgumentError, "repository must not be nil") if @repo.nil? 
+    Rails.logger.debug("RDF-Sync initialized")   
   end
 
   def reset_(uri)
