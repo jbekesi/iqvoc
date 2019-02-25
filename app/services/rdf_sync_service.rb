@@ -26,12 +26,14 @@ class RDFSyncService
       end
       repo = host_url[slashpos+1 .. -1]
       host_url = host_url[0..slashpos-1]
-      Rails.logger.debug("RDFSync: " + host_url + " for " + repo)
+      Rails.logger.debug("RDF-Sync: " + host_url + " for " + repo)
       if repo.blank? 
        raise ArgumentError, 'missing repository in Fuseki URL'
       end
       options[:repository] = repo
-      return IqTriplestorage::FusekiAdaptor.new(host_url, options)
+      testing = IqTriplestorage::FusekiAdaptor.new(host_url, options)
+      Rails.logger.debug("RDF-Sync: from Calling Fuseki Adaptor: "  + testing)
+      return testing
     end,
 
   }
