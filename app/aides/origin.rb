@@ -14,12 +14,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# cf. https://github.com/phaidra/utils/tree/master/pidgen
+# (perl version)
+require 'base32/crockford'
+
+
 class Origin
   attr_accessor :initial_value, :value
 
   def initialize(value = nil)
     self.initial_value = value
-    self.value = "_#{SecureRandom.hex(4)}"
+    randval = SecureRandom(33285996544) + 1073741824
+    self.value = Base32::Crockford.encode(randval, :split=>4, :length=>8)"
+    # was before:
+    # self.value = "_#{SecureRandom.hex(4)}"
   end
 
   def valid?

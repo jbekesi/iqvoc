@@ -32,7 +32,7 @@ class RDFSyncService
       end
       options[:repository] = repo
       testing = IqTriplestorage::FusekiAdaptor.new(host_url, options)
-      Rails.logger.debug("RDF-Sync: from Calling Fuseki Adaptor: "  + testing)
+      Rails.logger.debug("RDF-Sync: from Calling Fuseki Adaptor: #{testing}")
       return testing
     end,
 
