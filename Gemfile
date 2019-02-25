@@ -43,7 +43,7 @@ gem 'delayed_job_active_record', '~> 4.1.1'
 gem 'carrierwave'
 gem 'autoprefixer-rails', '~> 6.5.1.1'
 gem 'daemons'
-gem 'base32-crockford'
+gem 'base32-crockford-checksum'
 
 # database adapters
 # comment out those you do don't need or use a different Gemfile
