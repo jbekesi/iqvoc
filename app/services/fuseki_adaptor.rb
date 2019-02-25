@@ -1,4 +1,5 @@
 require "net/http"
+require "cgi"
 
 require "iq_triplestorage"
 
@@ -8,14 +9,38 @@ class IqTriplestorage::FusekiAdaptor < IqTriplestorage::BaseAdaptor
     super
     # validate to avoid nasty errors
     raise(ArgumentError, "username must not be nil") if @username.nil?
+    @repo = options[:repository]
+    raise(ArgumentError, "repository must not be nil") if @repo.nil?    
   end
 
-  def reset(uri)
+  def reset_(uri)
     return sparql_pull("CLEAR GRAPH <#{uri}>") # XXX: s/CLEAR/DROP/ was rejected (405)
   end
 
-  # expects a hash of N-Triples by graph URI
+  # expects a hash of N-Triples by graph URI (from SESAME)
   def batch_update(triples_by_graph)
+    path = "/#{CGI.escape(@repo)}"
+    path = URI.join("#{@host}/", path[1..-1]).path
+
+    del_params = triples_by_graph.keys.
+        map { |graph| val = CGI.escape("<#{graph}>"); "context=#{val}" }.
+        join("&")
+    Rails.logger.debug("RDF-Sync: del_params: #{del_params}")
+    res = http_request("DELETE", "#{path}?#{del_params}")
+    return false unless res.code == "204"
+
+    data = triples_by_graph.map do |graph_uri, ntriples|
+      "<#{graph_uri}> {\n#{ntriples}\n}\n"
+    end.join("\n\n")
+    Rails.logger.debug("RDF-Sync: data: #{data}")
+    return false
+    res = http_request("POST", path, data,
+          { "Content-Type" => "application/x-trig" })
+    return res.code == "204"
+  end
+
+  # expects a hash of N-Triples by graph URI
+  def batch_update_virtuoso(triples_by_graph)
     # apparently Virtuoso gets confused when mixing CLEAR and INSERT queries,
     # so we have to do use separate requests
 
@@ -34,7 +59,7 @@ class IqTriplestorage::FusekiAdaptor < IqTriplestorage::BaseAdaptor
   end
 
   # uses push method if `rdf_data` is provided, pull otherwise
-  def update(uri, rdf_data=nil, content_type=nil)
+  def update_(uri, rdf_data=nil, content_type=nil)
     reset(uri)
 
     if rdf_data
@@ -46,7 +71,7 @@ class IqTriplestorage::FusekiAdaptor < IqTriplestorage::BaseAdaptor
     return res
   end
 
-  def sparql_push(uri, rdf_data, content_type)
+  def sparql_push_(uri, rdf_data, content_type)
     raise TypeError, "missing content type" unless content_type
 
     filename = uri.gsub(/[^0-9A-Za-z]/, "_") # XXX: too simplistic?
@@ -59,7 +84,7 @@ class IqTriplestorage::FusekiAdaptor < IqTriplestorage::BaseAdaptor
     return res.code == "201"
   end
 
-  def sparql_pull(query)
+  def sparql_pull_(query)
     path = "/DAV/home/#{@username}/rdf_sink" # XXX: shouldn't this be /sparql?
     res = http_request("POST", path, query, {
       "Content-Type" => "application/sparql-query"
