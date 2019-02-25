@@ -22,7 +22,7 @@ Iqvoc.host_namespace = Iqvoc::Phdr
 Iqvoc.config do |config|
   config.register_settings({
     "title" => "Cedar",
-    "site_url" => "",
+    "site_url" => "https://vocab.phaidra.org/vocabulary",
     "minter.base_url" => "",
     "minter.api_endpoint" => "",
     "minter.api_key" => "",
