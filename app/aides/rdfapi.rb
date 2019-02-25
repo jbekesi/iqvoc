@@ -37,7 +37,8 @@ class RDFAPI
   URI_REGEXP = /^https?:\/\/[^\s]+$/
   URI_LITERAL_REGEXP = /^<(https?:\/\/[^\s]+)>$/
   LITERAL_REGEXP = /^"(.+)"(@(.+))?$/
-  BLANK_NODE_REGEXP = /^_:(.+)/
+  # BLANK_NODE_REGEXP = /^_:(.+)/
+  BLANK_NODE_REGEXP = /^(.{4}-.{4})/
 
   def self.devour(rdf_subject, rdf_predicate, rdf_object)
     case rdf_predicate
