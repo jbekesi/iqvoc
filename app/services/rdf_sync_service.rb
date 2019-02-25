@@ -19,8 +19,15 @@ class RDFSyncService
     end,
     'fuseki' => lambda do |host_url, options|
       require 'iq_triplestorage_local/fuseki_adaptor'
-      host_url, _, repo = host_url.rpartition('/repositories/')
-      if host_url.blank? 
+      slashpos = host_url.rindex('/')
+      if slashpos == host_url.length + 1
+        host_url = host_url.chop
+        slashpos = host.url.rindex('/')
+      end
+      repo = host_url[slashpos+1 .. -1]
+      host_url = host_url[0..slashpos-1]
+      Rails.logger.debug("RDFSync: " + host_url + " for " + repo)
+      if repo.blank? 
        raise ArgumentError, 'missing repository in Fuseki URL'
       end
       options[:repository] = repo
@@ -72,7 +79,7 @@ class RDFSyncService
       memo
     end
 
-    adaptor_type = 'sesame' # XXX: hard-coded
+    adaptor_type = 'fuseki' # XXX: hard-coded
     adaptor = ADAPTORS[adaptor_type].call(@target_url, username: @username,
         password: @password)
     return adaptor.batch_update(data)
