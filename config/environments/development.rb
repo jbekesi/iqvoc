@@ -17,8 +17,8 @@
 require 'iqvoc/environments/development'
 
 
-if Iqvoc::Phdr.const_defined?(:Application)
-  Iqvoc::Phdr::Application.configure do
+if Iqvoc::const_defined?(:Application)
+  Iqvoc::Application.configure do
     # Settings specified here will take precedence over those in config/environment.rb
     Iqvoc::Environments.setup_development(config)
   end
