@@ -18,7 +18,7 @@ class RDFSyncService
       return IqTriplestorage::SesameAdaptor.new(host_url, options)
     end,
     'fuseki' => lambda do |host_url, options|
-      require 'iq_triplestorage_local/fuseki_adaptor'
+      require_relative 'fuseki_adaptor'
       slashpos = host_url.rindex('/')
       if slashpos == host_url.length + 1
         host_url = host_url.chop
@@ -31,7 +31,7 @@ class RDFSyncService
        raise ArgumentError, 'missing repository in Fuseki URL'
       end
       options[:repository] = repo
-      return IqTriplestorage::FusekiAdaptor.new(host_url, options)
+      return IqTriplestorageLocal::FusekiAdaptor.new(host_url, options)
     end,
 
   }
