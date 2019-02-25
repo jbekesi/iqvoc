@@ -2,7 +2,7 @@ require "net/http"
 
 require "iq_triplestorage"
 
-class IqTriplestorageLocal::FusekiAdaptor < IqTriplestorage::BaseAdaptor
+class IqTriplestorage::FusekiAdaptor < IqTriplestorage::BaseAdaptor
 
   def initialize(host, options={})
     super

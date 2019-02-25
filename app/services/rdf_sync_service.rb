@@ -31,7 +31,7 @@ class RDFSyncService
        raise ArgumentError, 'missing repository in Fuseki URL'
       end
       options[:repository] = repo
-      return IqTriplestorageLocal::FusekiAdaptor.new(host_url, options)
+      return IqTriplestorage::FusekiAdaptor.new(host_url, options)
     end,
 
   }
