@@ -15,6 +15,8 @@
 # limitations under the License.
 
 Rails.application.routes.draw do
+  get '/', to: redirect('/vocabulary')
+  scope '/vocabulary' do
   apipie
 
   scope ':lang', constraints: Iqvoc.routing_constraint do
@@ -101,4 +103,5 @@ Rails.application.routes.draw do
   get ':id' => 'rdf#show', as: 'rdf'
   
   root to: 'frontpage#index', format: nil
+end
 end
