@@ -123,6 +123,7 @@ en:
          triplestore_password: Password for triplestore
          triplestore_autosync: Automatic triplestore synchronization
          sources_iqvoc: Sources (iQvoc)
+         site_url: Site URL
      alphabetical_concepts:
      untranslated_concepts:
        caption: "Missing Translations"
